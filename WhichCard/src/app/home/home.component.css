@@ -1,0 +1,66 @@
+.nav-height{
+    height: 500px;
+    width: 100%;
+}
+.page-bg{
+ 
+    height: 100%;
+    width: 100%;
+}
+.form-size{
+    height: 360px;
+    width:600px;
+}
+.form-size2{
+    height: 630px;
+    width:600px;
+    margin-top: 100px;
+}
+.space{
+    width: 500px;;
+}
+.align{
+   margin-left: 450px;
+}
+.form-bg{
+    background-color: white;
+}
+.border{
+    box-shadow: 5px 4px 2px 2px #eeeded;
+    border-color: black;
+    border-radius: 3%;
+}
+nav {
+background-position: 1%;
+    background-image: url(../../assets/images/credt.jpg);
+
+  background-repeat: no-repeat,;
+}
+.input-format{
+    height: 50px;
+    width: 100%;   
+}
+.label-text{
+    font-size: medium;
+   
+}
+.button-format{
+    background-color: rgb(46, 2, 2);
+    color: #eeeded;
+    height: 40px;
+    width:50%;
+    border-radius: 20px;
+    font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.links-format{
+    margin-left: 34%;
+    font-size: medium;
+}
+.nav-button{
+    font-size: medium;
+   float: inline-end;
+    border-radius: 20px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

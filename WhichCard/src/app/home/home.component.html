@@ -1,0 +1,100 @@
+<div class="page-bg ">
+<nav class="navbar navbar-expand-sm ">
+    <div class=" nav-height">
+      <div class="d-flex flex-row container-fluid">
+      <div style="width: 1400px;">
+      <a class=" navbar-brand text-light p-4" href="#">
+        WhichCard?
+        <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
+      </a>
+     </div>
+    
+      <div>
+      <!-- <button type="button" class="btn btn-outline-light p-4 nav-button">Sign up</button> -->
+      
+      </div>
+      </div>
+   </div>
+  </nav>
+<div class="align">
+  <div class=" {{click1}} position-absolute top-50  p-4 form-size form-bg border ">
+    <form >
+      <div class="mb-3 mt-3 ">
+        <label for="email" class="form-label label-text">Email:</label>
+        <br>
+        <input type="email" class=" form-control input-format" placeholder="xyz@gmail.com" id="email"  name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label label-text">Password:</label>
+        <br>
+        <input type="password" class="form-control  input-format" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-check mb-3 mt-2 ">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <div>
+      <button  class="btn  button-format" (click)="logIn()">Log in</button> 
+      </div>
+      <p class="mt-3 text-center">Or</p>
+      <div class="mt-3 links-format">
+        <a class=" text-dark p-4" (click)="signUp()">
+          Sign up
+        </a>
+        <a class=" text-dark p-4" (click)="guestLogIn()">
+          Use as guest
+        </a>
+        </div>
+    </form>
+    </div>
+    <div class="{{click2}} position-absolute top-0   p-4 form-size2 form-bg border ">
+    <form >
+      <div class="mb-3 mt-3 ">
+        <label for="email" class="form-label label-text">First Name:</label>
+        <br>
+        <input type="email" class=" form-control input-format"  id="email"  name="email">
+      </div>
+      <div class="mb-3 mt-3 ">
+        <label for="email" class="form-label label-text">Last Name:</label>
+        <br>
+        <input type="email" class=" form-control input-format"  id="email"  name="email">
+      </div>
+      <div class="mb-3 mt-3 ">
+        <label for="email" class="form-label label-text">Email:</label>
+        <br>
+        <input type="email" class=" form-control input-format" placeholder="xyz@gmail.com" id="email"  name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label label-text">Password:</label>
+        <br>
+        <input type="password" class="form-control  input-format" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label label-text">Re-enter password:</label>
+        <br>
+        <input type="password" class="form-control  input-format" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-check mb-3 mt-2 ">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <div>
+      <button  class="btn  button-format" (click)="logIn()">Sign up</button> 
+      </div>
+      <p class="mt-3 text-center">Already having an account?</p>
+      <div class="mt-3 links-format">
+        <a class=" text-dark p-4" href="/home">
+          Log in
+        </a>
+        <a class=" text-dark p-4" (click)="guestLogIn()">
+          Use as guest
+        </a>
+        </div>
+    </form>
+    
+  </div>
+  </div>
+</div>
+ 

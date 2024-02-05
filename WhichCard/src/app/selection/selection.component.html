@@ -1,0 +1,93 @@
+<div class="page-bg">
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class=" nav-height">
+    <div class="d-flex flex-row container-fluid">
+    <div style="width: 1400px;">
+   
+    <a class=" navbar-brand text-light mt-4" href="#">
+      WhichCard?
+      <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
+    </a>
+   </div>
+  
+    <div>
+      <a href="#" class="btn  btn-lg p-4 mt-2  user-b {{account}}">
+        <span class="glyphicon glyphicon-user user-i"></span> 
+      </a>
+     
+    </div>
+    <div class="p-3 {{account}}">
+      <button type="button" class="btn btn-outline-light p-3 logout-b nav-button" (click)="logOut()">log out</button>
+    </div>
+    </div>
+ </div>
+</nav>
+
+<div class="grid-container">
+  <div class="grid-item ">
+    <div class="{{uncheck}} p-4  form-size form-bg border ">
+      <form class="d-flex flex-row">
+        
+        <div class="mb-3 mt-3 form-group input-w">
+          <label for="card" class="form-label label-text">Card</label>
+          <br>
+          <select class=" form-control input-format" #card (change)="selectedCard(card.value)"  id="card"  name="card">
+            <option value="Zolve aspire">Zolve aspire</option>
+            <option value="Zolve classic">Zolve classic</option>
+            <option value="Zolve signature">Zolve signature</option>
+            <option value="Zolve black">Zolve black</option>
+          </select>
+        </div>
+        <div class="mb-3  mt-3 input-w">
+          <label for="purchase" class="form-label label-text">Expense</label>
+          <br>
+          <select  class="form-control  input-format" id="purchase" #purchase (change)="Onpurchase(purchase.value)"  name="purchase">
+          <option value="Airbnb">Airbnb</option>
+          <option value="Lyft">Lyft</option>
+          <option value="Uber">Uber</option>
+          <option value="Amazon">Amazon</option>
+          <option value="Walmart">Walmart</option>
+          <option value="Zipcar">Zipcar</option>
+          <option value="Target">Target</option>
+          <option value="AT&T">AT&T</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Starbucks">Starbucks</option>
+          </select>
+        </div>
+        
+      </form>
+      <button  class="btn mb-3 button-format" (click)="OnCheck()" >Check</button>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="{{check}} form-size form-bg border ">
+      <div class="">
+        <div class="mb-3 mt-3 p-4 form-group input-w">
+          <table id="information">
+            <tbody>
+            <tr>
+              <th class="p-3">Card</th>
+              <th class="p-3">Expense</th>
+              <th class="p-3">Save</th>
+            </tr>
+            <tr>
+              <td>{{selectedcard}}</td>
+              <td>{{selectedItem}}</td>
+              <td>1% cashback</td>
+            </tr>
+            <tr>
+              <td class="p-3"><b>Total</b></td>
+              <td></td>
+              <td class="p-3"><b>1%</b></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>     
+      </div>
+    </div>
+    
+  </div>
+   
+  
+</div>
+</div>
